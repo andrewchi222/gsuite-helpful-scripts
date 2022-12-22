@@ -96,7 +96,6 @@ function folderAndFiles(folderID, ss, memberToRemove) {
         ss.toast(fileName, 'Removed member as a viewer from folder:');
       }
       
-      // pass through folder to Function to get sub-files
       folderAndFiles(childId, ss, memberToRemove);
     }
     catch(e) {
